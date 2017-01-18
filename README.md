@@ -41,6 +41,10 @@ The program moves the three consonants the end of the word to the end, then add 
 * Example Output: oolschay
 
 The program keeps "qu" together if they are the first consonants and move them together to the end.
+* Example Input: queen
+* Example Output: eenquay
+
+The program keeps "qu" together if they are not the first consonants and move them together to the end.
 * Example Input: square
 * Example Output: aresquay
 
