@@ -20,6 +20,14 @@ The program adds "ay" to single-letter words beginning with a vowel, regardless 
 * Example Input: I
 * Example Output: iay
 
+The program adds "ay" to single-letter words beginning with a consonant.
+* Example Input: c
+* Example Output: cay
+
+The program adds "ay" to single-letter words beginning with a consonant, regardless of capitalization.
+* Example Input: C
+* Example Output: cay
+
 The program moves the beginning consonants at the end of the word then add "ay".
 * Example Input: coding
 * Example Output: odingcay
@@ -43,6 +51,11 @@ The program treats "y" as a consonant if it is the very first consonant.
 The program treats "y" as a consonant if it is the very first consonant, regardless of capitalization.
 * Example Input: Year
 * Example Output: earyay
+
+The program applies the above rules to multi word sentences
+* Example Input: It is raining outside
+* Example Output: itay isay ainingray outsideay
+
 
 ## Setup
 
