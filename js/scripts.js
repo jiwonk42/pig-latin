@@ -1,4 +1,5 @@
 var pigLatin = function(aWord) {
+  // debugger;
 
   var vowels = ['a', 'e', 'i', 'o', 'u'];
   aWord = aWord.toLowerCase();
@@ -30,20 +31,22 @@ var pigLatin = function(aWord) {
   var wordArray = aWord.split("");
   var count = 0;
 
+  var splitLocation = 0;
+  for (var i = 0; i < wordArray.length; i++){
+    // if(count <= 2) {
+    //   count++;
+      for(var j = 0; j < vowels.length; j++){
 
-  wordArray.forEach(function(letter){
-    if(count <= 2) {
-      count++;
-      vowels.forEach(function(vowel){
-
-        if (letter === vowel) {
-          var splitLocation = wordArray.indexOf(vowel);
+        if (wordArray[i] === vowels[j]) {
+          splitLocation = wordArray.indexOf(vowels[j]);
           resultWord = aWord.substring(splitLocation) + aWord.substring(0,splitLocation) + ending;
+          return resultWord;
+          break;
         }
-      });
-    };
-  });
-  return resultWord;
+      };
+  };
+
+
 
 
 
