@@ -9,7 +9,12 @@ var pigLatin = function(aWord) {
     if(aWord.charAt(0) === vowel) {
       resultWord = aWord + "ay";
     } else if (aWord.charAt(0) !== vowel && aWord.charAt(1) === vowel){
-        resultWord = aWord.slice(1) + aWord.slice(0,1) + "ay";
+        if (aWord.substring(0, 2) === "qu") {
+          resultWord = aWord.slice(2) + aWord.slice(0,2) + "ay";
+        } else {
+          resultWord = aWord.slice(1) + aWord.slice(0,1) + "ay";
+        }
+
     } else if (aWord.charAt(0) !== vowel && aWord.charAt(1) !== vowel && aWord.charAt(2) === vowel){
         resultWord = aWord.slice(2) + aWord.slice(0,2) + "ay";
     } else if (aWord.charAt(0) !== vowel && aWord.charAt(1) !== vowel && aWord.charAt(2) !== vowel && aWord.charAt(3) === vowel){
