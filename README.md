@@ -28,13 +28,29 @@ The program adds "ay" to single-letter words beginning with a consonant, regardl
 * Example Input: C
 * Example Output: cay
 
-The program moves the beginning consonants at the end of the word then add "ay".
+The program moves the single consonant the end of the word to the end, then add "ay".
 * Example Input: coding
 * Example Output: odingcay
 
-The program moves the beginning consonants at the end of the word then add "ay", regardless of capitalization.
+The program moves the single consonant the end of the word to the end, then add "ay", regardless of capitalization.
 * Example Input: Coding
 * Example Output: odingcay
+
+The program moves the two consonants the end of the word to the end, then add "ay".
+* Example Input: stick
+* Example Output: ickstay
+
+The program moves the two consonants the end of the word to the end, then add "ay", regardless of capitalization.
+* Example Input: Stick
+* Example Output: ickstay
+
+The program moves the three consonants the end of the word to the end, then add "ay".
+* Example Input: school
+* Example Output: oolschay
+
+The program moves the three consonants the end of the word to the end, then add "ay", regardless of capitalization.
+* Example Input: School
+* Example Output: oolschay
 
 The program keeps "qu" together if they are the first consonants and move them together to the end.
 * Example Input: square
