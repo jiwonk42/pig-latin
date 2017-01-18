@@ -16,16 +16,32 @@ The program adds "ay" to single-letter words beginning with a vowel.
 * Example Input: i
 * Example Output: iay
 
+The program adds "ay" to single-letter words beginning with a vowel, regardless of capitalization.
+* Example Input: I
+* Example Output: iay
+
 The program moves the beginning consonants at the end of the word then add "ay".
 * Example Input: coding
+* Example Output: odingcay
+
+The program moves the beginning consonants at the end of the word then add "ay", regardless of capitalization.
+* Example Input: Coding
 * Example Output: odingcay
 
 The program keeps "qu" together if they are the first consonants and move them together to the end.
 * Example Input: square
 * Example Output: aresquay
 
+The program keeps "qu" together if they are the first consonants and move them together to the end, regardless of capitalization.
+* Example Input: Queen
+* Example Output: eenquay
+
 The program treats "y" as a consonant if it is the very first consonant.
 * Example Input: year
+* Example Output: earyay
+
+The program treats "y" as a consonant if it is the very first consonant, regardless of capitalization.
+* Example Input: Year
 * Example Output: earyay
 
 ## Setup
