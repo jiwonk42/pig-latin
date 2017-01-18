@@ -28,11 +28,19 @@ The program adds "ay" to single-letter words beginning with a consonant, regardl
 * Example Input: C
 * Example Output: cay
 
-The program moves the single consonant the end of the word to the end, then add "ay".
+The program adds "ay" to multi-letter words beginning with a vowel.
+* Example Input: igloo
+* Example Output: iglooay
+
+The program adds "ay" to multi-letter words beginning with a vowel, regardless of capitalization.
+* Example Input: Igloo
+* Example Output: iglooay
+
+The program moves multi-letter words beginning with a single consonant, then add "ay".
 * Example Input: coding
 * Example Output: odingcay
 
-The program moves the single consonant the end of the word to the end, then add "ay", regardless of capitalization.
+The program moves multi-letter words beginning with a single consonant, then add "ay", regardless of capitalization.
 * Example Input: Coding
 * Example Output: odingcay
 
