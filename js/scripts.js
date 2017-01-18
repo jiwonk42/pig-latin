@@ -1,7 +1,14 @@
-var pigLatin = function (aWord) {
-  if (typeof aWord !== 'string'){
-    return "this is not a word!!";
-  }
+var pigLatin = function(aWord) {
+
+  var vowels = ['a', 'e', 'i', 'o', 'u'];
+  aWord = aWord.toLowerCase();
+
+  vowels.forEach(function(vowel) {
+    if(aWord.charAt(0) === vowel) {
+      aWord = aWord + "ay";
+    }
+  });
+  return aWord;
 }
 
 $(document).ready(function(){
