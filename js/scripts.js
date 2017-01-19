@@ -21,16 +21,27 @@ var pigLatin = function(aWord) {
         return resultWord;
         break;
       }
-    };
+    }
   };
 };
+
+
+var splitWords = function(sentence) {
+  var allWordsArray = sentence.split(" ");
+  var resultArray = []
+
+  allWordsArray.forEach(function(word){
+    resultArray.push(pigLatin(word));
+  })
+  return resultArray.join(" ");
+}
 
 $(document).ready(function(){
   $("form#pig-latin-form").submit(function(event){
     event.preventDefault();
 
     var userInput = $("input#word").val();
-    var result = pigLatin(userInput);
+    var result = splitWords(userInput);
 
     $("div#result").text(result);
 
